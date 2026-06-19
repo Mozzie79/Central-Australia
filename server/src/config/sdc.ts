@@ -1,0 +1,48 @@
+export type SdcEntry = {
+  name: string;
+  number: string;
+  acronym: string;
+};
+
+export const SDC: SdcEntry[] = [
+  { name: "Nominal Insurer", number: "A02", acronym: "NI" },
+  { name: "NT Major Events Company Pty Ltd", number: "A07", acronym: "NTMEC" },
+  { name: "Desert Knowledge Foundation Limited", number: "A08", acronym: "DKFL" },
+  { name: "Desert Knowledge Australia", number: "A09", acronym: "DKA" },
+  { name: "Department of the Legislative Assembly", number: "A10", acronym: "DLA" },
+  { name: "Department of the Chief Minister", number: "A11", acronym: "DCM" },
+  { name: "Northern Territory Electoral Commission", number: "A12", acronym: "NTEC" },
+  { name: "Office of the Commissioner for Public Employment", number: "A13", acronym: "OCPE" },
+  { name: "Auditor-General's Office", number: "A14", acronym: "AGO" },
+  { name: "Ombudsman's Office", number: "A15", acronym: "OMB" },
+  { name: "Northern Territory Police, Fire and Emergency Services", number: "A16", acronym: "PFES" },
+  { name: "Office of the Independent Commissioner Against Corruption", number: "A17", acronym: "ICAC" },
+  { name: "Central Holding Authority", number: "A18", acronym: "CHA" },
+  { name: "NT Home Ownership", number: "A19", acronym: "NTHO" },
+  { name: "Northern Territory Treasury Corporation", number: "A21", acronym: "NTTC" },
+  { name: "Land Development Corporation", number: "A23", acronym: "LDC" },
+  { name: "Department of Treasury and Finance", number: "A25", acronym: "DTF" },
+  { name: "NT Build Statutory Corporation", number: "A26", acronym: "NTBUILD" },
+  { name: "WaterFront Statutory Corporation", number: "A27", acronym: "WFC" },
+  { name: "Aboriginal Areas Protection Authority", number: "A32", acronym: "AAPA" },
+  { name: "Department of Education", number: "A35", acronym: "DoE" },
+  { name: "AustralAsia Railway Corporation", number: "A36", acronym: "AARC" },
+  { name: "Batchelor Institute of Indigenous Tertiary Education", number: "A40", acronym: "BIITE" },
+  { name: "Jacana Energy", number: "A42", acronym: "PRC" },
+  { name: "Power Generation Corporation", number: "A43", acronym: "PGC" },
+  { name: "Power and Water Corporation", number: "A46", acronym: "PWC" },
+  { name: "Indigenous Essential Services Pty Ltd", number: "A49", acronym: "IES" },
+  { name: "Department of Environment and Natural Resources", number: "A50", acronym: "DENR" },
+  { name: "Department of Local Government, Housing and Community Development", number: "A51", acronym: "DLGHCD" },
+  { name: "NT Legal Aid Commission", number: "A53", acronym: "LAC" },
+  { name: "Department of Infrastructure, Planning and Logistics", number: "A60", acronym: "DIPL" },
+  { name: "NT Fleet", number: "A62", acronym: "NTF" },
+  { name: "Data Centre Services", number: "A66", acronym: "DCS" },
+  { name: "Department of Corporate and Information Services", number: "A68", acronym: "DCIS" },
+  { name: "Motor Accidents (Compensation) Commission", number: "A69", acronym: "MACC" },
+  { name: "Department of Health", number: "A70", acronym: "DoH" },
+  { name: "Department of the Attorney-General and Justice", number: "A79", acronym: "AGD" },
+  { name: "Territory Wildlife Parks", number: "A84", acronym: "TWP" },
+  { name: "Museums and Art Galleries of the Northern Territory", number: "A91", acronym: "MAGNT" },
+  { name: "Department of Primary Industry and Resources", number: "A92", acronym: "DPIR" },
+];

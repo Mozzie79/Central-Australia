@@ -8,11 +8,7 @@
     "skipLibCheck": true,
     "outDir": "dist",
     "rootDir": "src",
-    "resolveJsonModule": true,
-    "baseUrl": ".",
-    "paths": {
-      "@dcs/shared/*": ["../shared/*"]
-    }
+    "resolveJsonModule": true
   },
   "include": ["src"]
 }
