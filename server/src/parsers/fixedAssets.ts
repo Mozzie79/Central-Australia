@@ -3,6 +3,7 @@ import { z } from 'zod';
 import type { FixedAssetRow } from '@dcs/shared';
 
 const rawRowSchema = z.object({
+  'ASSET NO.': z.string(),
   'COST CENTRE': z.string(),
   'COST BASIS': z.coerce.number(),
   'ACCUM DEPN': z.coerce.number(),
@@ -22,6 +23,7 @@ export function parseFixedAssetsCsv(csv: string): FixedAssetRow[] {
   return data.map((raw) => {
     const row = rawRowSchema.parse(raw);
     return {
+      assetNo: row['ASSET NO.'],
       costCentre: row['COST CENTRE'],
       costBasis: row['COST BASIS'],
       accumDepn: row['ACCUM DEPN'],

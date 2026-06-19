@@ -5,3 +5,5 @@ export * from './stdClass.js';
 export * from './asWrLookup.js';
 export * from './contractorAllocations.js';
 export * from './overheadHeadcount.js';
+export * from './assetProductMap.js';
+export * from './plannedAssetAdditions.js';

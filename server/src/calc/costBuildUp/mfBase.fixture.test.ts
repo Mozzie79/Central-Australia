@@ -1,7 +1,13 @@
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
-import { describe, it } from 'vitest';
-import { CONTRACTOR_ALLOCATIONS, MAINFRAME_FAMILY } from '../../config/index.js';
+import { describe, expect, it } from 'vitest';
+import {
+  ASSET_LIFE_MONTHS_OVERRIDE,
+  ASSET_PRODUCT_MAP,
+  CONTRACTOR_ALLOCATIONS,
+  MAINFRAME_FAMILY,
+  PLANNED_ASSET_ADDITIONS,
+} from '../../config/index.js';
 import { parseContractorActualCsv } from '../../parsers/contractorActual.js';
 import { parseEmployeeExpenseCsv } from '../../parsers/employeeExpense.js';
 import { parseFixedAssetsCsv } from '../../parsers/fixedAssets.js';
@@ -11,9 +17,6 @@ import { computePayrollStaffCosts } from './payrollStaffCosts.js';
 
 const FIXTURES_DIR = path.resolve(import.meta.dirname, '../../../../fixtures');
 
-// Fixed Assets uses short cost-centre codes ("1011"); Employee Expense and the
-// Overhead config use the full code ("661011") for the same Mainframe cost centre.
-const MF_BASE_ASSET_COST_CENTRE = '1011';
 const PRODUCT = 'BASE';
 
 type RowResult = {
@@ -47,7 +50,14 @@ describe('MF BASE Phase 3 fixture checkpoint', () => {
     );
 
     const computedByRow: Record<string, number> = {
-      Assets: computeAssets(fixedAssets, MF_BASE_ASSET_COST_CENTRE),
+      Assets: computeAssets(
+        fixedAssets,
+        ASSET_PRODUCT_MAP,
+        ASSET_LIFE_MONTHS_OVERRIDE,
+        PLANNED_ASSET_ADDITIONS,
+        PRODUCT,
+        'fy202627',
+      ),
       'Payroll Staff Costs': computePayrollStaffCosts(employeeExpense, MAINFRAME_FAMILY, PRODUCT),
       'Contractor Staff Costs': computeContractorStaffCosts(
         contractorActuals,
@@ -71,5 +81,11 @@ describe('MF BASE Phase 3 fixture checkpoint', () => {
         status: r.status,
       })),
     );
+
+    for (const r of results) {
+      expect(r.status, `${r.row} diff of ${(r.diffPct * 100).toFixed(2)}% is flagged`).not.toBe(
+        'flagged',
+      );
+    }
   });
 });

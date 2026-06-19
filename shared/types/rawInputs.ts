@@ -1,4 +1,5 @@
 export type FixedAssetRow = {
+  assetNo: string;
   costCentre: string;
   costBasis: number;
   accumDepn: number;
