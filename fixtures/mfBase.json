@@ -1,0 +1,9 @@
+{
+  "sheetName": "MF BASE",
+  "source": "DCS_Input_costs_202627_V1.6.xlsb, sheet MF BASE, stored values",
+  "rows": {
+    "Assets": { "2025-26": 196999.99999999997, "2026-27": 455324.16666666657 },
+    "Payroll Staff Costs": { "2025-26": 1292885, "2026-27": 1429852.0 },
+    "Contractor Staff Costs": { "2025-26": 1351633, "2026-27": 1354209.0 }
+  }
+}
