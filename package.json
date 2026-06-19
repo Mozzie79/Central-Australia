@@ -1,0 +1,14 @@
+{
+  "name": "dcs-cost-model",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=@dcs/server & npm run dev --workspace=@dcs/client & wait",
+    "dev:server": "npm run dev --workspace=@dcs/server",
+    "dev:client": "npm run dev --workspace=@dcs/client"
+  }
+}
