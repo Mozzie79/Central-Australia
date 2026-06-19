@@ -1,0 +1,9 @@
+{
+  "sheetName": "MF Storage",
+  "source": "DCS_Input_costs_202627_V1.6.xlsb, sheet MF Storage, stored values",
+  "rows": {
+    "Assets": { "2025-26": 170000.0, "2026-27": 184882.59 },
+    "Payroll Staff Costs": { "2025-26": 116936.0, "2026-27": 120592.0 },
+    "Contractor Staff Costs": { "2025-26": 0.0, "2026-27": 0.0 }
+  }
+}

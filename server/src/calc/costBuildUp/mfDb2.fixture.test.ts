@@ -14,11 +14,11 @@ import { computeContractorStaffCosts } from './contractorStaffCosts.js';
 import { compareToFixture, loadFixture, readFixtureCsv, reportAndAssertResults } from './fixtureTestHelpers.js';
 import { computePayrollStaffCosts } from './payrollStaffCosts.js';
 
-const PRODUCT = 'BASE';
+const PRODUCT = 'DB2';
 
-describe('MF BASE Phase 3 fixture checkpoint', () => {
+describe('MF DB2 Phase 4 fixture checkpoint', () => {
   it('computes Assets / Payroll / Contractor rows against the workbook\'s stored 2026-27 values', () => {
-    const fixture = loadFixture('mfBase.json');
+    const fixture = loadFixture('mfDb2.json');
 
     const fixedAssets = parseFixedAssetsCsv(readFixtureCsv('rawInputs/FixedAssets.csv'));
     const employeeExpense = parseEmployeeExpenseCsv(readFixtureCsv('rawInputs/Employee_Expense.csv'));

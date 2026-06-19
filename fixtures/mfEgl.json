@@ -1,0 +1,9 @@
+{
+  "sheetName": "MF EGL",
+  "source": "DCS_Input_costs_202627_V1.6.xlsb, sheet MF EGL, stored values",
+  "rows": {
+    "Assets": { "2025-26": 0.0, "2026-27": 0.0 },
+    "Payroll Staff Costs": { "2025-26": 135669.0, "2026-27": 139925.0 },
+    "Contractor Staff Costs": { "2025-26": 102562.0, "2026-27": 101914.0 }
+  }
+}
