@@ -6,6 +6,7 @@ import {
   CONTRACTOR_ALLOCATIONS,
   CORPORATE_STAFF_OVERHEAD,
   EMPLOYEE_ALLOCATIONS,
+  GDC_BUILDING_OVERHEAD,
   HR_OVERHEAD,
   PLANNED_ASSET_ADDITIONS,
 } from '../../config/index.js';
@@ -13,6 +14,7 @@ import { parseContractorActualCsv } from '../../parsers/contractorActual.js';
 import { parseEmployeeExpenseCsv } from '../../parsers/employeeExpense.js';
 import { parseFixedAssetsCsv } from '../../parsers/fixedAssets.js';
 import { computeAssets } from './assets.js';
+import { computeGdcBuildingOverheads } from './buildingOverheads.js';
 import { computeContractorStaffCosts } from './contractorStaffCosts.js';
 import { compareToFixture, loadFixture, readFixtureCsv, reportAndAssertResults } from './fixtureTestHelpers.js';
 import { computePayrollStaffCosts } from './payrollStaffCosts.js';
@@ -29,7 +31,7 @@ const ASSET_PRODUCT = 'SERVER HOSTING GDC';
 const PRODUCT = 'Server Hosting GDC';
 
 describe('Server Hosting GDC Phase 4 fixture checkpoint', () => {
-  it('computes Assets / Payroll / Contractor / HR / Business Support Overhead / Corporate Staff Overhead rows against the workbook\'s stored 2026-27 values', () => {
+  it('computes Assets / Payroll / Contractor / HR / Business Support Overhead / Corporate Staff Overhead / GDC Building Overheads rows against the workbook\'s stored 2026-27 values', () => {
     const fixture = loadFixture('serverHostingGdc.json');
 
     const fixedAssets = parseFixedAssetsCsv(readFixtureCsv('rawInputs/FixedAssets.csv'));
@@ -54,6 +56,7 @@ describe('Server Hosting GDC Phase 4 fixture checkpoint', () => {
       HR: computeHrOverhead(HR_OVERHEAD, PRODUCT),
       'Business Support Overhead': computeBusinessSupportOverhead(BUSINESS_SUPPORT_OVERHEAD, PRODUCT),
       'Corporate Staff Overhead': computeCorporateStaffOverhead(CORPORATE_STAFF_OVERHEAD, PRODUCT),
+      'GDC Building Overheads': computeGdcBuildingOverheads(GDC_BUILDING_OVERHEAD, PRODUCT),
     };
 
     const results = compareToFixture(computedByRow, fixture, '2026-27');

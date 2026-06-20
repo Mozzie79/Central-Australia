@@ -2,6 +2,7 @@ import { describe, it } from 'vitest';
 import {
   ASSET_LIFE_MONTHS_OVERRIDE,
   ASSET_PRODUCT_MAP,
+  BDC_OVERHEAD,
   BUSINESS_SUPPORT_OVERHEAD,
   CONTRACTOR_ALLOCATIONS,
   CORPORATE_STAFF_OVERHEAD,
@@ -13,6 +14,7 @@ import { parseContractorActualCsv } from '../../parsers/contractorActual.js';
 import { parseEmployeeExpenseCsv } from '../../parsers/employeeExpense.js';
 import { parseFixedAssetsCsv } from '../../parsers/fixedAssets.js';
 import { computeAssets } from './assets.js';
+import { computeBdcOverhead } from './buildingOverheads.js';
 import { computeContractorStaffCosts } from './contractorStaffCosts.js';
 import { compareToFixture, loadFixture, readFixtureCsv, reportAndAssertResults } from './fixtureTestHelpers.js';
 import { computePayrollStaffCosts } from './payrollStaffCosts.js';
@@ -29,7 +31,7 @@ const ASSET_PRODUCT = 'SERVER HOSTING BDC';
 const PRODUCT = 'Server Hosting BDC';
 
 describe('Server Hosting BDC Phase 4 fixture checkpoint', () => {
-  it('computes Assets / Payroll / Contractor / HR / Business Support Overhead / Corporate Staff Overhead rows against the workbook\'s stored 2026-27 values', () => {
+  it('computes Assets / Payroll / Contractor / HR / Business Support Overhead / Corporate Staff Overhead / BDC Overhead rows against the workbook\'s stored 2026-27 values', () => {
     const fixture = loadFixture('serverHostingBdc.json');
 
     const fixedAssets = parseFixedAssetsCsv(readFixtureCsv('rawInputs/FixedAssets.csv'));
@@ -54,6 +56,7 @@ describe('Server Hosting BDC Phase 4 fixture checkpoint', () => {
       HR: computeHrOverhead(HR_OVERHEAD, PRODUCT),
       'Business Support Overhead': computeBusinessSupportOverhead(BUSINESS_SUPPORT_OVERHEAD, PRODUCT),
       'Corporate Staff Overhead': computeCorporateStaffOverhead(CORPORATE_STAFF_OVERHEAD, PRODUCT),
+      'BDC Overhead': computeBdcOverhead(BDC_OVERHEAD, PRODUCT),
     };
 
     const results = compareToFixture(computedByRow, fixture, '2026-27');
