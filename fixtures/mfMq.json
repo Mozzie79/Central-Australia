@@ -1,0 +1,12 @@
+{
+  "sheetName": "MF MQ",
+  "source": "DCS_Input_costs_202627_V1.6.xlsb, sheet MF MQ, stored values - every row is explicitly $0 for 2026-27 (and every other recent fiscal year), confirming the product is decommissioned/inactive for the forecast year",
+  "rows": {
+    "Assets": { "2026-27": 0 },
+    "Payroll Staff Costs": { "2026-27": 0 },
+    "Contractor Staff Costs": { "2026-27": 0 },
+    "HR": { "2026-27": 0 },
+    "Business Support Overhead": { "2026-27": 0 },
+    "Corporate Staff Overhead": { "2026-27": 0 }
+  }
+}
