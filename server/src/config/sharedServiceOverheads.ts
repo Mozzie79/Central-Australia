@@ -16,6 +16,10 @@ export const HR_OVERHEAD: Record<string, number> = {
   'App Management': 5030.202449094227,
   'Website Hosting Services': 5030.202449094227,
   Sharepoint: 5030.202449094227,
+  VMWare: 60362.429389130724,
+  'Windows OS': 25151.01224547113,
+  'RedHat OS': 5030.202449094227,
+  'Disk Fixed File': 10060.404898188453,
 };
 
 // "Business Support" sheet row 81 (GL 379111, GOODS & SERVICES COST ALLOC,
@@ -35,6 +39,10 @@ export const BUSINESS_SUPPORT_OVERHEAD: Record<string, number> = {
   'App Management': 18466.58,
   'Website Hosting Services': 18466.58,
   Sharepoint: 18466.58,
+  VMWare: 221598.96000000002,
+  'Windows OS': 92332.9,
+  'RedHat OS': 18466.58,
+  'Disk Fixed File': 36933.16,
 };
 
 // "Corporate" sheet rows 22 + 73 summed per destination (two "Total Shared
@@ -57,4 +65,8 @@ export const CORPORATE_STAFF_OVERHEAD: Record<string, number> = {
   'App Management': 4329.3404219590975,
   'Website Hosting Services': 4329.3404219590975,
   Sharepoint: 4329.3404219590975,
+  VMWare: 51952.08506350918,
+  'Windows OS': 21646.702109795486,
+  'RedHat OS': 4329.3404219590975,
+  'Disk Fixed File': 8658.680843918195,
 };
