@@ -13,6 +13,7 @@ import {
   HR_OVERHEAD,
   MAINTENANCE_AND_LICENSES,
   PLANNED_ASSET_ADDITIONS,
+  PLAZA3_SHARED_COSTS,
   UNDER_PINNING_SERVICES,
 } from '../../config/index.js';
 import { computeAssets } from '../costBuildUp/assets.js';
@@ -26,6 +27,7 @@ import {
   computeFitoutOverhead,
   computeHrOverhead,
   computeMaintenanceAndLicenses,
+  computePlaza3SharedCosts,
   computeUnderPinningServices,
 } from '../costBuildUp/sharedServiceOverheads.js';
 
@@ -70,6 +72,7 @@ export function computeProductCostSummary(
     'Fitout Overhead': computeFitoutOverhead(FITOUT_OVERHEAD, product),
     'Cost Centre Specific Expenses': computeCostCentreSpecificExpenses(CCS_EXPENSES, product),
     'Under Pinning Services': computeUnderPinningServices(UNDER_PINNING_SERVICES, product),
+    'Plaza 3 Shared Costs': computePlaza3SharedCosts(PLAZA3_SHARED_COSTS, product),
   };
 
   if (buildingOverhead === 'GDC') {
@@ -78,6 +81,13 @@ export function computeProductCostSummary(
   if (buildingOverhead === 'BDC') {
     summary['BDC Overhead'] = computeBdcOverhead(BDC_OVERHEAD, product);
   }
+
+  // DCS Summary's TOTAL EXPENSES (row 39) and Total Excluding internal (row 40)
+  // are exact sums over the rows above - verified to the cent against the
+  // workbook for every tracked product, not independent figures of their own.
+  const totalExpenses = Object.values(summary).reduce((sum, value) => sum + value, 0);
+  summary['TOTAL EXPENSES'] = totalExpenses;
+  summary['Total Excluding internal'] = totalExpenses - summary['Under Pinning Services'];
 
   return summary;
 }

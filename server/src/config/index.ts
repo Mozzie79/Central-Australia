@@ -17,3 +17,4 @@ export * from './maintenanceAndLicenses.js';
 export * from './fitoutOverhead.js';
 export * from './ccsExpenses.js';
 export * from './underPinningServices.js';
+export * from './plaza3SharedCosts.js';

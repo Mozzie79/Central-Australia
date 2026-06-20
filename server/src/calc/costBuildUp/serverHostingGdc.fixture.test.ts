@@ -12,6 +12,7 @@ import {
   HR_OVERHEAD,
   MAINTENANCE_AND_LICENSES,
   PLANNED_ASSET_ADDITIONS,
+  PLAZA3_SHARED_COSTS,
   UNDER_PINNING_SERVICES,
 } from '../../config/index.js';
 import { parseContractorActualCsv } from '../../parsers/contractorActual.js';
@@ -29,6 +30,7 @@ import {
   computeFitoutOverhead,
   computeHrOverhead,
   computeMaintenanceAndLicenses,
+  computePlaza3SharedCosts,
   computeUnderPinningServices,
 } from './sharedServiceOverheads.js';
 

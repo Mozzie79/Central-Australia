@@ -37,3 +37,10 @@ export function computeCostCentreSpecificExpenses(map: Record<string, number>, p
 export function computeUnderPinningServices(map: Record<string, number>, product: string): number {
   return map[product] ?? 0;
 }
+
+// "Plaza 3 Shared Costs" is the same kind of static per-destination dollar
+// table, also sourced from DCS Summary itself rather than independently
+// cross-validated — see server/src/config/plaza3SharedCosts.ts.
+export function computePlaza3SharedCosts(map: Record<string, number>, product: string): number {
+  return map[product] ?? 0;
+}

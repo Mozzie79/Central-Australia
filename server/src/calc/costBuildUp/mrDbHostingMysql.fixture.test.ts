@@ -11,6 +11,7 @@ import {
   HR_OVERHEAD,
   MAINTENANCE_AND_LICENSES,
   PLANNED_ASSET_ADDITIONS,
+  PLAZA3_SHARED_COSTS,
   UNDER_PINNING_SERVICES,
 } from '../../config/index.js';
 import { parseContractorActualCsv } from '../../parsers/contractorActual.js';
@@ -27,6 +28,7 @@ import {
   computeFitoutOverhead,
   computeHrOverhead,
   computeMaintenanceAndLicenses,
+  computePlaza3SharedCosts,
   computeUnderPinningServices,
 } from './sharedServiceOverheads.js';
 
@@ -65,6 +67,7 @@ describe('MR DB Hosting - MySQL Phase 4 fixture checkpoint', () => {
       'Fitout Overhead': computeFitoutOverhead(FITOUT_OVERHEAD, PRODUCT),
       'Cost Centre Specific Expenses': computeCostCentreSpecificExpenses(CCS_EXPENSES, PRODUCT),
       'Under Pinning Services': computeUnderPinningServices(UNDER_PINNING_SERVICES, PRODUCT),
+      'Plaza 3 Shared Costs': computePlaza3SharedCosts(PLAZA3_SHARED_COSTS, PRODUCT),
     };
 
     const results = compareToFixture(computedByRow, fixture, '2026-27');

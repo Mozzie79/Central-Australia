@@ -12,7 +12,10 @@
       "Maintenance and Licenses": { "2026-27": 31970.350000000006 },
       "Fitout Overhead": { "2026-27": 21408.373849443702 },
       "Cost Centre Specific Expenses": { "2026-27": 79000 },
-      "Under Pinning Services": { "2026-27": 0 }
+      "Under Pinning Services": { "2026-27": 0 },
+      "Plaza 3 Shared Costs": { "2026-27": 0 },
+      "TOTAL EXPENSES": { "2026-27": 2549604.0254840455 },
+      "Total Excluding internal": { "2026-27": 2549604.0254840455 }
     },
     "Server Hosting GDC": {
       "Assets": { "2026-27": 251638.35395238097 },
@@ -25,7 +28,10 @@
       "Maintenance and Licenses": { "2026-27": 0.0 },
       "Fitout Overhead": { "2026-27": 3568.0623082406173 },
       "Cost Centre Specific Expenses": { "2026-27": 100500 },
-      "Under Pinning Services": { "2026-27": 0 }
+      "Under Pinning Services": { "2026-27": 0 },
+      "Plaza 3 Shared Costs": { "2026-27": 0 },
+      "TOTAL EXPENSES": { "2026-27": 1970004.46915881 },
+      "Total Excluding internal": { "2026-27": 1970004.46915881 }
     },
     "Server Hosting BDC": {
       "Assets": { "2026-27": 41162.944 },
@@ -38,7 +44,10 @@
       "Maintenance and Licenses": { "2026-27": 0.0 },
       "Fitout Overhead": { "2026-27": 0.0 },
       "Cost Centre Specific Expenses": { "2026-27": 22000 },
-      "Under Pinning Services": { "2026-27": 0 }
+      "Under Pinning Services": { "2026-27": 0 },
+      "Plaza 3 Shared Costs": { "2026-27": 0 },
+      "TOTAL EXPENSES": { "2026-27": 1110583.05488 },
+      "Total Excluding internal": { "2026-27": 1110583.05488 }
     },
     "BASE": {
       "Assets": { "2026-27": 455324.16666666657 },
@@ -50,7 +59,10 @@
       "Maintenance and Licenses": { "2026-27": 3936326.8597500003 },
       "Fitout Overhead": { "2026-27": 92769.62001425606 },
       "Cost Centre Specific Expenses": { "2026-27": 23000 },
-      "Under Pinning Services": { "2026-27": 1426392.9600000002 }
+      "Under Pinning Services": { "2026-27": 1426392.9600000002 },
+      "Plaza 3 Shared Costs": { "2026-27": 169197.95033345814 },
+      "TOTAL EXPENSES": { "2026-27": 9527073.642798608 },
+      "Total Excluding internal": { "2026-27": 8100680.682798608 }
     },
     "MF MQ": {
       "Assets": { "2026-27": 0.0 },
@@ -62,7 +74,10 @@
       "Maintenance and Licenses": { "2026-27": 0.0 },
       "Fitout Overhead": { "2026-27": 0.0 },
       "Cost Centre Specific Expenses": { "2026-27": 0 },
-      "Under Pinning Services": { "2026-27": 0 }
+      "Under Pinning Services": { "2026-27": 0 },
+      "Plaza 3 Shared Costs": { "2026-27": 0 },
+      "TOTAL EXPENSES": { "2026-27": 0.0 },
+      "Total Excluding internal": { "2026-27": 0.0 }
     },
     "DB2": {
       "Assets": { "2026-27": 0.0 },
@@ -74,7 +89,10 @@
       "Maintenance and Licenses": { "2026-27": 441397.42000000004 },
       "Fitout Overhead": { "2026-27": 14272.24923296247 },
       "Cost Centre Specific Expenses": { "2026-27": 0 },
-      "Under Pinning Services": { "2026-27": 0 }
+      "Under Pinning Services": { "2026-27": 0 },
+      "Plaza 3 Shared Costs": { "2026-27": 22440.046463323357 },
+      "TOTAL EXPENSES": { "2026-27": 1031635.0843094459 },
+      "Total Excluding internal": { "2026-27": 1031635.0843094459 }
     },
     "EGL": {
       "Assets": { "2026-27": 0.0 },
@@ -86,7 +104,10 @@
       "Maintenance and Licenses": { "2026-27": 149398.15000000002 },
       "Fitout Overhead": { "2026-27": 14272.24923296247 },
       "Cost Centre Specific Expenses": { "2026-27": 0 },
-      "Under Pinning Services": { "2026-27": 0 }
+      "Under Pinning Services": { "2026-27": 0 },
+      "Plaza 3 Shared Costs": { "2026-27": 13464.027877994013 },
+      "TOTAL EXPENSES": { "2026-27": 474625.6728530631 },
+      "Total Excluding internal": { "2026-27": 474625.6728530631 }
     },
     "STORAGE": {
       "Assets": { "2026-27": 184882.59 },
@@ -98,7 +119,10 @@
       "Maintenance and Licenses": { "2026-27": 241230.27024999997 },
       "Fitout Overhead": { "2026-27": 7136.124616481235 },
       "Cost Centre Specific Expenses": { "2026-27": 0 },
-      "Under Pinning Services": { "2026-27": 0 }
+      "Under Pinning Services": { "2026-27": 0 },
+      "Plaza 3 Shared Costs": { "2026-27": 7180.814868263474 },
+      "TOTAL EXPENSES": { "2026-27": 588847.9226057979 },
+      "Total Excluding internal": { "2026-27": 588847.9226057979 }
     },
     "Application Services": {
       "Assets": { "2026-27": 0.0 },
@@ -110,7 +134,10 @@
       "Maintenance and Licenses": { "2026-27": 0.0 },
       "Fitout Overhead": { "2026-27": 28544.49846592494 },
       "Cost Centre Specific Expenses": { "2026-27": 17000 },
-      "Under Pinning Services": { "2026-27": 82716.96 }
+      "Under Pinning Services": { "2026-27": 82716.96 },
+      "Plaza 3 Shared Costs": { "2026-27": 100082.60722642217 },
+      "TOTAL EXPENSES": { "2026-27": 3402142.7430160404 },
+      "Total Excluding internal": { "2026-27": 3319425.7830160405 }
     }
   }
 }
