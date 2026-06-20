@@ -1,0 +1,12 @@
+{
+  "sheetName": "App Services - Application Services",
+  "source": "DCS_Input_costs_202627_V1.6.xlsb, sheet App Services, stored values",
+  "rows": {
+    "Assets": { "2026-27": 0 },
+    "Payroll Staff Costs": { "2026-27": 544314.0 },
+    "Contractor Staff Costs": { "2026-27": 2267745.0 },
+    "HR": { "2026-27": 65392.631838224945 },
+    "Business Support Overhead": { "2026-27": 240065.54 },
+    "Corporate Staff Overhead": { "2026-27": 56281.42548546827 }
+  }
+}

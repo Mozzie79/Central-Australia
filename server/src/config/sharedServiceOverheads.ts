@@ -21,6 +21,7 @@ export const HR_OVERHEAD: Record<string, number> = {
   'RedHat OS': 5030.202449094227,
   'Disk Fixed File': 10060.404898188453,
   'SAN Storage': 35211.417143659586,
+  'Application Services': 65392.631838224945,
 };
 
 // "Business Support" sheet row 81 (GL 379111, GOODS & SERVICES COST ALLOC,
@@ -45,6 +46,7 @@ export const BUSINESS_SUPPORT_OVERHEAD: Record<string, number> = {
   'RedHat OS': 18466.58,
   'Disk Fixed File': 36933.16,
   'SAN Storage': 129266.06000000001,
+  'Application Services': 240065.54,
 };
 
 // "Corporate" sheet rows 22 + 73 summed per destination (two "Total Shared
@@ -72,4 +74,5 @@ export const CORPORATE_STAFF_OVERHEAD: Record<string, number> = {
   'RedHat OS': 4329.3404219590975,
   'Disk Fixed File': 8658.680843918195,
   'SAN Storage': 30305.382953713688,
+  'Application Services': 56281.42548546827,
 };
