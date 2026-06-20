@@ -33,3 +33,8 @@ export type MainframeUsageRow = {
   tranName: string;
   cpuSecs: number;
 };
+
+export type DasdUsageRow = {
+  agency: string;
+  grandTotalGb: number;
+};
