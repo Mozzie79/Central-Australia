@@ -1,0 +1,12 @@
+{
+  "sheetName": "MR App Host",
+  "source": "DCS_Input_costs_202627_V1.6.xlsb, sheet MR App Host (block label \"Application Hosting\"), stored values",
+  "rows": {
+    "Assets": { "2026-27": 0.0 },
+    "Payroll Staff Costs": { "2026-27": 111947.0 },
+    "Contractor Staff Costs": { "2026-27": 128894.54999999999 },
+    "HR": { "2026-27": 10060.404898188453 },
+    "Business Support Overhead": { "2026-27": 36933.16 },
+    "Corporate Staff Overhead": { "2026-27": 8658.680843918195 }
+  }
+}
