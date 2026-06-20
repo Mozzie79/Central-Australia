@@ -1,0 +1,66 @@
+{
+  "sheetName": "AS Summary",
+  "source": "DCS_Input_costs_202627_V1.6.xlsb, sheet AS Summary, columns 'Total Hours'/'Billable'/'Non-Billable' (cols 2-4), keyed by the 'PRAMMS Name' column (col 1, matching the 'Contractor' field format used in the raw AS data sheet, e.g. 'BARRETTO  CHAI'). Formula confirmed: per-contractor SUM(Hours Worked) from the raw 'AS data' sheet, split into Billable/Non-Billable by whether the row's Client equals the literal string 'NON-BILLABLE'.",
+  "rows": {
+    "BREWER  KIM": {
+      "Total Hours": 1166.04,
+      "Billable": 1089.88,
+      "Non-Billable": 76.16
+    },
+    "GURRAN  MATTHEW": {
+      "Total Hours": 1361.8199999999997,
+      "Billable": 618.1300000000001,
+      "Non-Billable": 743.69
+    },
+    "BHATTACHARYA  ARIJIT": {
+      "Total Hours": 1440.75,
+      "Billable": 1178.5,
+      "Non-Billable": 262.25
+    },
+    "CHAUDHARY  JAGBIR": {
+      "Total Hours": 1976.0,
+      "Billable": 1944.0,
+      "Non-Billable": 32.0
+    },
+    "BARRETTO  MAX": {
+      "Total Hours": 1824.34,
+      "Billable": 1620.2800000000002,
+      "Non-Billable": 204.06000000000003
+    },
+    "SIMPKINS  GILBERT": {
+      "Total Hours": 1216.5,
+      "Billable": 370.0,
+      "Non-Billable": 846.5
+    },
+    "RAVI  PRAVEEN": {
+      "Total Hours": 1896.75,
+      "Billable": 1736.17,
+      "Non-Billable": 160.57999999999998
+    },
+    "BARRETTO  CHAI": {
+      "Total Hours": 1908.8200000000006,
+      "Billable": 1645.8900000000008,
+      "Non-Billable": 262.93
+    },
+    "FUNG  MICHAEL": {
+      "Total Hours": 1372.8500000000001,
+      "Billable": 1196.59,
+      "Non-Billable": 176.26000000000002
+    },
+    "NGAI  JAYRICK": {
+      "Total Hours": 1794.25,
+      "Billable": 1766.0,
+      "Non-Billable": 28.25
+    },
+    "LINGAMANENI  HARITA": {
+      "Total Hours": 1936.0,
+      "Billable": 1701.5,
+      "Non-Billable": 234.5
+    },
+    "DODGE  KEVIN": {
+      "Total Hours": 1062.5,
+      "Billable": 1038.5,
+      "Non-Billable": 24.0
+    }
+  }
+}

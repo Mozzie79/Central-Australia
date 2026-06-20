@@ -38,3 +38,10 @@ export type DasdUsageRow = {
   agency: string;
   grandTotalGb: number;
 };
+
+export type AsDataRow = {
+  contractor: string;
+  client: string;
+  project: string;
+  hoursWorked: number;
+};
