@@ -3,6 +3,7 @@ import {
   ASSET_LIFE_MONTHS_OVERRIDE,
   ASSET_PRODUCT_MAP,
   BUSINESS_SUPPORT_OVERHEAD,
+  CCS_EXPENSES,
   CONTRACTOR_ALLOCATIONS,
   CORPORATE_STAFF_OVERHEAD,
   EMPLOYEE_ALLOCATIONS,
@@ -10,6 +11,7 @@ import {
   HR_OVERHEAD,
   MAINTENANCE_AND_LICENSES,
   PLANNED_ASSET_ADDITIONS,
+  UNDER_PINNING_SERVICES,
 } from '../../config/index.js';
 import { parseContractorActualCsv } from '../../parsers/contractorActual.js';
 import { parseEmployeeExpenseCsv } from '../../parsers/employeeExpense.js';
@@ -21,9 +23,11 @@ import { computePayrollStaffCosts } from './payrollStaffCosts.js';
 import {
   computeBusinessSupportOverhead,
   computeCorporateStaffOverhead,
+  computeCostCentreSpecificExpenses,
   computeFitoutOverhead,
   computeHrOverhead,
   computeMaintenanceAndLicenses,
+  computeUnderPinningServices,
 } from './sharedServiceOverheads.js';
 
 const ASSET_PRODUCT = 'DISK FIXED FILE';
@@ -57,6 +61,8 @@ describe('MR Virtual Server - Disk Fixed File Phase 4 fixture checkpoint', () =>
       'Corporate Staff Overhead': computeCorporateStaffOverhead(CORPORATE_STAFF_OVERHEAD, PRODUCT),
       'Maintenance and Licenses': computeMaintenanceAndLicenses(MAINTENANCE_AND_LICENSES, PRODUCT),
       'Fitout Overhead': computeFitoutOverhead(FITOUT_OVERHEAD, PRODUCT),
+      'Cost Centre Specific Expenses': computeCostCentreSpecificExpenses(CCS_EXPENSES, PRODUCT),
+      'Under Pinning Services': computeUnderPinningServices(UNDER_PINNING_SERVICES, PRODUCT),
     };
 
     const results = compareToFixture(computedByRow, fixture, '2026-27');

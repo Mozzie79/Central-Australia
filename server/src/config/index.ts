@@ -15,3 +15,5 @@ export * from './db2DatabaseCount.js';
 export * from './eglApplicationCount.js';
 export * from './maintenanceAndLicenses.js';
 export * from './fitoutOverhead.js';
+export * from './ccsExpenses.js';
+export * from './underPinningServices.js';

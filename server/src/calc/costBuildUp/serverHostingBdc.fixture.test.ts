@@ -4,6 +4,7 @@ import {
   ASSET_PRODUCT_MAP,
   BDC_OVERHEAD,
   BUSINESS_SUPPORT_OVERHEAD,
+  CCS_EXPENSES,
   CONTRACTOR_ALLOCATIONS,
   CORPORATE_STAFF_OVERHEAD,
   EMPLOYEE_ALLOCATIONS,
@@ -11,6 +12,7 @@ import {
   HR_OVERHEAD,
   MAINTENANCE_AND_LICENSES,
   PLANNED_ASSET_ADDITIONS,
+  UNDER_PINNING_SERVICES,
 } from '../../config/index.js';
 import { parseContractorActualCsv } from '../../parsers/contractorActual.js';
 import { parseEmployeeExpenseCsv } from '../../parsers/employeeExpense.js';
@@ -23,9 +25,11 @@ import { computePayrollStaffCosts } from './payrollStaffCosts.js';
 import {
   computeBusinessSupportOverhead,
   computeCorporateStaffOverhead,
+  computeCostCentreSpecificExpenses,
   computeFitoutOverhead,
   computeHrOverhead,
   computeMaintenanceAndLicenses,
+  computeUnderPinningServices,
 } from './sharedServiceOverheads.js';
 
 // ASSET_PRODUCT_MAP uses the uppercase tag; EMPLOYEE_ALLOCATIONS and the shared

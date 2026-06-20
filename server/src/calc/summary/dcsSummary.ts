@@ -4,6 +4,7 @@ import {
   ASSET_PRODUCT_MAP,
   BDC_OVERHEAD,
   BUSINESS_SUPPORT_OVERHEAD,
+  CCS_EXPENSES,
   CONTRACTOR_ALLOCATIONS,
   CORPORATE_STAFF_OVERHEAD,
   EMPLOYEE_ALLOCATIONS,
@@ -12,6 +13,7 @@ import {
   HR_OVERHEAD,
   MAINTENANCE_AND_LICENSES,
   PLANNED_ASSET_ADDITIONS,
+  UNDER_PINNING_SERVICES,
 } from '../../config/index.js';
 import { computeAssets } from '../costBuildUp/assets.js';
 import { computeBdcOverhead, computeGdcBuildingOverheads } from '../costBuildUp/buildingOverheads.js';
@@ -20,9 +22,11 @@ import { computePayrollStaffCosts } from '../costBuildUp/payrollStaffCosts.js';
 import {
   computeBusinessSupportOverhead,
   computeCorporateStaffOverhead,
+  computeCostCentreSpecificExpenses,
   computeFitoutOverhead,
   computeHrOverhead,
   computeMaintenanceAndLicenses,
+  computeUnderPinningServices,
 } from '../costBuildUp/sharedServiceOverheads.js';
 
 export type ProductCostConfig = {
@@ -64,6 +68,8 @@ export function computeProductCostSummary(
     'Business Support Overhead': computeBusinessSupportOverhead(BUSINESS_SUPPORT_OVERHEAD, product),
     'Maintenance and Licenses': computeMaintenanceAndLicenses(MAINTENANCE_AND_LICENSES, product),
     'Fitout Overhead': computeFitoutOverhead(FITOUT_OVERHEAD, product),
+    'Cost Centre Specific Expenses': computeCostCentreSpecificExpenses(CCS_EXPENSES, product),
+    'Under Pinning Services': computeUnderPinningServices(UNDER_PINNING_SERVICES, product),
   };
 
   if (buildingOverhead === 'GDC') {

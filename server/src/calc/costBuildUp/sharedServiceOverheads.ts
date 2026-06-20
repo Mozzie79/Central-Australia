@@ -24,3 +24,16 @@ export function computeMaintenanceAndLicenses(map: Record<string, number>, produ
 export function computeFitoutOverhead(map: Record<string, number>, product: string): number {
   return map[product] ?? 0;
 }
+
+// "Cost Centre Specific Expenses" is the same kind of static per-destination
+// dollar table - see server/src/config/ccsExpenses.ts.
+export function computeCostCentreSpecificExpenses(map: Record<string, number>, product: string): number {
+  return map[product] ?? 0;
+}
+
+// "Under Pinning Services" is the same kind of static per-destination dollar
+// table, but sourced from DCS Summary itself rather than independently
+// cross-validated - see server/src/config/underPinningServices.ts.
+export function computeUnderPinningServices(map: Record<string, number>, product: string): number {
+  return map[product] ?? 0;
+}
