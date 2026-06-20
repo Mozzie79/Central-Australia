@@ -2,8 +2,11 @@ import { describe, it } from 'vitest';
 import {
   ASSET_LIFE_MONTHS_OVERRIDE,
   ASSET_PRODUCT_MAP,
+  BUSINESS_SUPPORT_OVERHEAD,
   CONTRACTOR_ALLOCATIONS,
+  CORPORATE_STAFF_OVERHEAD,
   EMPLOYEE_ALLOCATIONS,
+  HR_OVERHEAD,
   PLANNED_ASSET_ADDITIONS,
 } from '../../config/index.js';
 import { parseContractorActualCsv } from '../../parsers/contractorActual.js';
@@ -13,6 +16,11 @@ import { computeAssets } from './assets.js';
 import { computeContractorStaffCosts } from './contractorStaffCosts.js';
 import { compareToFixture, loadFixture, readFixtureCsv, reportAndAssertResults } from './fixtureTestHelpers.js';
 import { computePayrollStaffCosts } from './payrollStaffCosts.js';
+import {
+  computeBusinessSupportOverhead,
+  computeCorporateStaffOverhead,
+  computeHrOverhead,
+} from './sharedServiceOverheads.js';
 
 const PRODUCT = 'STORAGE';
 
@@ -39,6 +47,9 @@ describe('MF Storage Phase 4 fixture checkpoint', () => {
         CONTRACTOR_ALLOCATIONS,
         PRODUCT,
       ),
+      HR: computeHrOverhead(HR_OVERHEAD, PRODUCT),
+      'Business Support Overhead': computeBusinessSupportOverhead(BUSINESS_SUPPORT_OVERHEAD, PRODUCT),
+      'Corporate Staff Overhead': computeCorporateStaffOverhead(CORPORATE_STAFF_OVERHEAD, PRODUCT),
     };
 
     const results = compareToFixture(computedByRow, fixture, '2026-27');

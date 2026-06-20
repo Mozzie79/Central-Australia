@@ -22,11 +22,11 @@ import {
   computeHrOverhead,
 } from './sharedServiceOverheads.js';
 
-const PRODUCT = 'DB2';
+const PRODUCT = 'Operations';
 
-describe('MF DB2 Phase 4 fixture checkpoint', () => {
-  it('computes Assets / Payroll / Contractor rows against the workbook\'s stored 2026-27 values', () => {
-    const fixture = loadFixture('mfDb2.json');
+describe('Operations Phase 4 fixture checkpoint', () => {
+  it('computes Assets / Payroll / Contractor / HR / Business Support Overhead / Corporate Staff Overhead rows against the workbook\'s stored 2026-27 values', () => {
+    const fixture = loadFixture('operations.json');
 
     const fixedAssets = parseFixedAssetsCsv(readFixtureCsv('rawInputs/FixedAssets.csv'));
     const employeeExpense = parseEmployeeExpenseCsv(readFixtureCsv('rawInputs/Employee_Expense.csv'));

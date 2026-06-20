@@ -15,7 +15,7 @@ export function computeAssets(
 ): number {
   const existing = assets
     .filter((a) => assetProductMap[a.assetNo] === product)
-    .reduce((sum, a) => sum + annualDepreciation(a, assetLifeMonthsOverride[a.assetNo]), 0);
+    .reduce((sum, a) => sum + annualDepreciation(a, fiscalYear, assetLifeMonthsOverride[a.assetNo]), 0);
 
   const planned = plannedAdditions
     .filter((p) => p.product === product)

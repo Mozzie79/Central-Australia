@@ -1,0 +1,12 @@
+{
+  "sheetName": "Operations",
+  "source": "DCS_Input_costs_202627_V1.6.xlsb, sheet Operations, stored values",
+  "rows": {
+    "Assets": { "2026-27": 0.0 },
+    "Payroll Staff Costs": { "2026-27": 2017780.0 },
+    "Contractor Staff Costs": { "2026-27": 0.0 },
+    "HR": { "2026-27": 85513.44163460186 },
+    "Business Support Overhead": { "2026-27": 313931.86000000004 },
+    "Corporate Staff Overhead": { "2026-27": 0.0 }
+  }
+}

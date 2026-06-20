@@ -8,3 +8,4 @@ export * from './overheadHeadcount.js';
 export * from './assetProductMap.js';
 export * from './plannedAssetAdditions.js';
 export * from './employeeProductMap.js';
+export * from './sharedServiceOverheads.js';

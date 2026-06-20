@@ -22,11 +22,15 @@ import {
   computeHrOverhead,
 } from './sharedServiceOverheads.js';
 
-const PRODUCT = 'DB2';
+// ASSET_PRODUCT_MAP uses the uppercase tag; EMPLOYEE_ALLOCATIONS and the shared
+// overhead lookups use the sheet-literal title-case label. These are not the same
+// string and must not be normalized into one constant.
+const ASSET_PRODUCT = 'SERVER HOSTING BDC';
+const PRODUCT = 'Server Hosting BDC';
 
-describe('MF DB2 Phase 4 fixture checkpoint', () => {
-  it('computes Assets / Payroll / Contractor rows against the workbook\'s stored 2026-27 values', () => {
-    const fixture = loadFixture('mfDb2.json');
+describe('Server Hosting BDC Phase 4 fixture checkpoint', () => {
+  it('computes Assets / Payroll / Contractor / HR / Business Support Overhead / Corporate Staff Overhead rows against the workbook\'s stored 2026-27 values', () => {
+    const fixture = loadFixture('serverHostingBdc.json');
 
     const fixedAssets = parseFixedAssetsCsv(readFixtureCsv('rawInputs/FixedAssets.csv'));
     const employeeExpense = parseEmployeeExpenseCsv(readFixtureCsv('rawInputs/Employee_Expense.csv'));
@@ -38,7 +42,7 @@ describe('MF DB2 Phase 4 fixture checkpoint', () => {
         ASSET_PRODUCT_MAP,
         ASSET_LIFE_MONTHS_OVERRIDE,
         PLANNED_ASSET_ADDITIONS,
-        PRODUCT,
+        ASSET_PRODUCT,
         'fy202627',
       ),
       'Payroll Staff Costs': computePayrollStaffCosts(employeeExpense, EMPLOYEE_ALLOCATIONS, PRODUCT),
