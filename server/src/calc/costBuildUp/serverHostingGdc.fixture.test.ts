@@ -8,6 +8,7 @@ import {
   EMPLOYEE_ALLOCATIONS,
   GDC_BUILDING_OVERHEAD,
   HR_OVERHEAD,
+  MAINTENANCE_AND_LICENSES,
   PLANNED_ASSET_ADDITIONS,
 } from '../../config/index.js';
 import { parseContractorActualCsv } from '../../parsers/contractorActual.js';
@@ -22,6 +23,7 @@ import {
   computeBusinessSupportOverhead,
   computeCorporateStaffOverhead,
   computeHrOverhead,
+  computeMaintenanceAndLicenses,
 } from './sharedServiceOverheads.js';
 
 // ASSET_PRODUCT_MAP uses the uppercase tag; EMPLOYEE_ALLOCATIONS and the shared
@@ -56,6 +58,7 @@ describe('Server Hosting GDC Phase 4 fixture checkpoint', () => {
       HR: computeHrOverhead(HR_OVERHEAD, PRODUCT),
       'Business Support Overhead': computeBusinessSupportOverhead(BUSINESS_SUPPORT_OVERHEAD, PRODUCT),
       'Corporate Staff Overhead': computeCorporateStaffOverhead(CORPORATE_STAFF_OVERHEAD, PRODUCT),
+      'Maintenance and Licenses': computeMaintenanceAndLicenses(MAINTENANCE_AND_LICENSES, PRODUCT),
       'GDC Building Overheads': computeGdcBuildingOverheads(GDC_BUILDING_OVERHEAD, PRODUCT),
     };
 

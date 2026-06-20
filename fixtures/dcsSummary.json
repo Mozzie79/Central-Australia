@@ -8,7 +8,8 @@
       "Contractor Staff Costs": { "2026-27": 0.0 },
       "Business Support HR Overhead": { "2026-27": 85513.44163460186 },
       "Corporate Staff Overhead": { "2026-27": 0.0 },
-      "Business Support Overhead": { "2026-27": 313931.86000000004 }
+      "Business Support Overhead": { "2026-27": 313931.86000000004 },
+      "Maintenance and Licenses": { "2026-27": 31970.350000000006 }
     },
     "Server Hosting GDC": {
       "Assets": { "2026-27": 251638.35395238097 },
@@ -17,7 +18,8 @@
       "Business Support HR Overhead": { "2026-27": 10060.404898188453 },
       "Corporate Staff Overhead": { "2026-27": 0.0 },
       "Business Support Overhead": { "2026-27": 36933.16 },
-      "GDC Building Overheads": { "2026-27": 1193122.488 }
+      "GDC Building Overheads": { "2026-27": 1193122.488 },
+      "Maintenance and Licenses": { "2026-27": 0.0 }
     },
     "Server Hosting BDC": {
       "Assets": { "2026-27": 41162.944 },
@@ -26,7 +28,8 @@
       "Business Support HR Overhead": { "2026-27": 0.0 },
       "Corporate Staff Overhead": { "2026-27": 0.0 },
       "Business Support Overhead": { "2026-27": 0.0 },
-      "BDC Overhead": { "2026-27": 1047420.11088 }
+      "BDC Overhead": { "2026-27": 1047420.11088 },
+      "Maintenance and Licenses": { "2026-27": 0.0 }
     },
     "BASE": {
       "Assets": { "2026-27": 455324.16666666657 },
@@ -34,7 +37,8 @@
       "Contractor Staff Costs": { "2026-27": 1354209.0 },
       "Business Support HR Overhead": { "2026-27": 115694.65632916722 },
       "Corporate Staff Overhead": { "2026-27": 99574.82970505925 },
-      "Business Support Overhead": { "2026-27": 424731.34 }
+      "Business Support Overhead": { "2026-27": 424731.34 },
+      "Maintenance and Licenses": { "2026-27": 3936326.8597500003 }
     },
     "MF MQ": {
       "Assets": { "2026-27": 0.0 },
@@ -42,7 +46,8 @@
       "Contractor Staff Costs": { "2026-27": 0.0 },
       "Business Support HR Overhead": { "2026-27": 0.0 },
       "Corporate Staff Overhead": { "2026-27": 0.0 },
-      "Business Support Overhead": { "2026-27": 0.0 }
+      "Business Support Overhead": { "2026-27": 0.0 },
+      "Maintenance and Licenses": { "2026-27": 0.0 }
     },
     "DB2": {
       "Assets": { "2026-27": 0.0 },
@@ -50,7 +55,8 @@
       "Contractor Staff Costs": { "2026-27": 399064.0 },
       "Business Support HR Overhead": { "2026-27": 15090.60734728268 },
       "Corporate Staff Overhead": { "2026-27": 12988.021265877293 },
-      "Business Support Overhead": { "2026-27": 55399.74 }
+      "Business Support Overhead": { "2026-27": 55399.74 },
+      "Maintenance and Licenses": { "2026-27": 441397.42000000004 }
     },
     "EGL": {
       "Assets": { "2026-27": 0.0 },
@@ -58,7 +64,8 @@
       "Contractor Staff Costs": { "2026-27": 101914.0 },
       "Business Support HR Overhead": { "2026-27": 10060.404898188453 },
       "Corporate Staff Overhead": { "2026-27": 8658.680843918195 },
-      "Business Support Overhead": { "2026-27": 36933.16 }
+      "Business Support Overhead": { "2026-27": 36933.16 },
+      "Maintenance and Licenses": { "2026-27": 149398.15000000002 }
     },
     "STORAGE": {
       "Assets": { "2026-27": 184882.59 },
@@ -66,7 +73,8 @@
       "Contractor Staff Costs": { "2026-27": 0.0 },
       "Business Support HR Overhead": { "2026-27": 5030.202449094227 },
       "Corporate Staff Overhead": { "2026-27": 4329.3404219590975 },
-      "Business Support Overhead": { "2026-27": 18466.58 }
+      "Business Support Overhead": { "2026-27": 18466.58 },
+      "Maintenance and Licenses": { "2026-27": 241230.27024999997 }
     },
     "Application Services": {
       "Assets": { "2026-27": 0.0 },
@@ -74,7 +82,8 @@
       "Contractor Staff Costs": { "2026-27": 2267745.0 },
       "Business Support HR Overhead": { "2026-27": 65392.631838224945 },
       "Corporate Staff Overhead": { "2026-27": 56281.42548546827 },
-      "Business Support Overhead": { "2026-27": 240065.54 }
+      "Business Support Overhead": { "2026-27": 240065.54 },
+      "Maintenance and Licenses": { "2026-27": 0.0 }
     }
   }
 }

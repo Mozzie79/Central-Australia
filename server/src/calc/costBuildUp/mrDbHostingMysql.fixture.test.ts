@@ -7,6 +7,7 @@ import {
   CORPORATE_STAFF_OVERHEAD,
   EMPLOYEE_ALLOCATIONS,
   HR_OVERHEAD,
+  MAINTENANCE_AND_LICENSES,
   PLANNED_ASSET_ADDITIONS,
 } from '../../config/index.js';
 import { parseContractorActualCsv } from '../../parsers/contractorActual.js';
@@ -20,6 +21,7 @@ import {
   computeBusinessSupportOverhead,
   computeCorporateStaffOverhead,
   computeHrOverhead,
+  computeMaintenanceAndLicenses,
 } from './sharedServiceOverheads.js';
 
 // CONTRACTOR_ALLOCATIONS tags this product 'mySQL' (lowercase m); no other config
@@ -53,6 +55,7 @@ describe('MR DB Hosting - MySQL Phase 4 fixture checkpoint', () => {
       HR: computeHrOverhead(HR_OVERHEAD, PRODUCT),
       'Business Support Overhead': computeBusinessSupportOverhead(BUSINESS_SUPPORT_OVERHEAD, PRODUCT),
       'Corporate Staff Overhead': computeCorporateStaffOverhead(CORPORATE_STAFF_OVERHEAD, PRODUCT),
+      'Maintenance and Licenses': computeMaintenanceAndLicenses(MAINTENANCE_AND_LICENSES, PRODUCT),
     };
 
     const results = compareToFixture(computedByRow, fixture, '2026-27');

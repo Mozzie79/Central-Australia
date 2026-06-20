@@ -9,6 +9,7 @@ import {
   EMPLOYEE_ALLOCATIONS,
   GDC_BUILDING_OVERHEAD,
   HR_OVERHEAD,
+  MAINTENANCE_AND_LICENSES,
   PLANNED_ASSET_ADDITIONS,
 } from '../../config/index.js';
 import { computeAssets } from '../costBuildUp/assets.js';
@@ -19,6 +20,7 @@ import {
   computeBusinessSupportOverhead,
   computeCorporateStaffOverhead,
   computeHrOverhead,
+  computeMaintenanceAndLicenses,
 } from '../costBuildUp/sharedServiceOverheads.js';
 
 export type ProductCostConfig = {
@@ -58,6 +60,7 @@ export function computeProductCostSummary(
     'Business Support HR Overhead': computeHrOverhead(HR_OVERHEAD, product),
     'Corporate Staff Overhead': computeCorporateStaffOverhead(CORPORATE_STAFF_OVERHEAD, product),
     'Business Support Overhead': computeBusinessSupportOverhead(BUSINESS_SUPPORT_OVERHEAD, product),
+    'Maintenance and Licenses': computeMaintenanceAndLicenses(MAINTENANCE_AND_LICENSES, product),
   };
 
   if (buildingOverhead === 'GDC') {
