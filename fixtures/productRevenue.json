@@ -1,0 +1,15 @@
+{
+  "sheetName": "Phase 7 Revenue - per-product 2026-27 (rate x volume reproductions)",
+  "source": "DCS_Input_costs_202627_V1.6.xlsb, sheets 'MF Fixed 26-27', 'App Services', 'MR Virtual Server', stored values",
+  "rows": {
+    "Application Services": { "2026-27": 3015866.1 },
+    "BASE": { "2026-27": 9688255.852082567 },
+    "DB2": { "2026-27": 1062584.1368387293 },
+    "EGL": { "2026-27": 488864.443038655 },
+    "VMWare": { "2026-27": 4814424.0 },
+    "Windows OS": { "2026-27": 2157000.0 },
+    "RedHat OS": { "2026-27": 330000.0 },
+    "Disk Fixed File": { "2026-27": 3305813.5200000005 },
+    "Disk Variable": { "2026-27": 0.0 }
+  }
+}
