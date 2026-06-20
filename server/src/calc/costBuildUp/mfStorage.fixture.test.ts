@@ -3,7 +3,7 @@ import {
   ASSET_LIFE_MONTHS_OVERRIDE,
   ASSET_PRODUCT_MAP,
   CONTRACTOR_ALLOCATIONS,
-  MAINFRAME_FAMILY,
+  EMPLOYEE_ALLOCATIONS,
   PLANNED_ASSET_ADDITIONS,
 } from '../../config/index.js';
 import { parseContractorActualCsv } from '../../parsers/contractorActual.js';
@@ -33,7 +33,7 @@ describe('MF Storage Phase 4 fixture checkpoint', () => {
         PRODUCT,
         'fy202627',
       ),
-      'Payroll Staff Costs': computePayrollStaffCosts(employeeExpense, MAINFRAME_FAMILY, PRODUCT),
+      'Payroll Staff Costs': computePayrollStaffCosts(employeeExpense, EMPLOYEE_ALLOCATIONS, PRODUCT),
       'Contractor Staff Costs': computeContractorStaffCosts(
         contractorActuals,
         CONTRACTOR_ALLOCATIONS,

@@ -21,17 +21,8 @@ export type RowResult = {
 // Tolerance is "within 1% or $5, whichever is larger" (per the plan's proposed threshold).
 // For an expected value of exactly 0, percentage diff is undefined, so fall back to the
 // flat $5 absolute tolerance.
-//
-// Payroll Staff Costs gets a wider tolerance: the Mainframe family's per-product split is a
-// flat headcount ratio, but the real $/FTE rate varies by product's role mix, and the
-// Employee Expense source has no per-product compensation detail to do better with
-// (investigated and confirmed during Phase 4 - see the plan's "Open Items" log).
-const ROW_TOLERANCE_PCT: Record<string, number> = {
-  'Payroll Staff Costs': 0.1,
-};
-
-function classify(diff: number, expected: number, row: string): RowResult['status'] {
-  const tolerancePct = ROW_TOLERANCE_PCT[row] ?? 0.01;
+function classify(diff: number, expected: number): RowResult['status'] {
+  const tolerancePct = 0.01;
   if (expected === 0) return diff <= 5 ? 'matched' : 'flagged';
   const diffPct = diff / Math.abs(expected);
   if (diffPct <= 0.001) return 'matched';
@@ -56,7 +47,7 @@ export function compareToFixture(
     const expected = fixture.rows[row][fiscalYear];
     const diff = Math.abs(computed - expected);
     const diffPct = expected === 0 ? (computed === 0 ? 0 : Infinity) : diff / Math.abs(expected);
-    return { row, computed, expected, diffPct, status: classify(diff, expected, row) };
+    return { row, computed, expected, diffPct, status: classify(diff, expected) };
   });
 }
 

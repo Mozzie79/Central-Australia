@@ -1,20 +1,24 @@
 import type { EmployeeExpenseRow } from '@dcs/shared';
-import type { CostCentreFamily } from '../../config/overheadHeadcount.js';
+import type { EmployeeAllocation } from '../../config/employeeProductMap.js';
 
-// Employee Expense is supplied pre-aggregated to cost-centre level (no per-employee
-// detail), so a product's share of a shared cost centre's payroll is allocated by
-// its share of that cost centre's total personnel headcount (per the Overhead config).
+// Employee Expense is supplied per employee-row (one row per position/cost-centre split).
+// Each row's product split is an explicit, often-fractional static allocation (the
+// "Employee Expense" sheet's own allocation columns), joined by (positionNumber, costCentre)
+// rather than name, since a position split across cost centres produces two rows sharing a
+// position number, and some employees' names repeat across rows without disambiguation.
 export function computePayrollStaffCosts(
   employeeExpense: EmployeeExpenseRow[],
-  family: CostCentreFamily,
+  employeeAllocations: EmployeeAllocation[],
   product: string,
 ): number {
-  const headcount = family.products[product];
-  if (!headcount) return 0;
+  const allocationByKey = new Map<string, EmployeeAllocation>();
+  for (const allocation of employeeAllocations) {
+    allocationByKey.set(`${allocation.positionNumber}|${allocation.costCentre}`, allocation);
+  }
 
-  const costCentreTotal = employeeExpense
-    .filter((e) => e.costCentre === family.costCentre)
-    .reduce((sum, e) => sum + e.total, 0);
-
-  return costCentreTotal * (headcount.staff / family.totalPersonnel);
+  return employeeExpense.reduce((sum, row) => {
+    const allocation = allocationByKey.get(`${row.positionNumber}|${row.costCentre}`);
+    const fraction = allocation?.allocations[product] ?? 0;
+    return sum + row.total * fraction;
+  }, 0);
 }

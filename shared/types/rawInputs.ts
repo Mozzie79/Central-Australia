@@ -9,8 +9,9 @@ export type FixedAssetRow = {
 };
 
 export type EmployeeExpenseRow = {
+  positionNumber: string;
   costCentre: string;
-  fte: number;
+  name: string;
   total: number;
 };
 

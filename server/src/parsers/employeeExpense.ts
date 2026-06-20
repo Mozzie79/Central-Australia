@@ -3,8 +3,9 @@ import { z } from 'zod';
 import type { EmployeeExpenseRow } from '@dcs/shared';
 
 const rawRowSchema = z.object({
+  positionNumber: z.string(),
   costCentre: z.string(),
-  fte: z.coerce.number(),
+  name: z.string(),
   total: z.coerce.number(),
 });
 
@@ -13,6 +14,6 @@ export function parseEmployeeExpenseCsv(csv: string): EmployeeExpenseRow[] {
 
   return data.map((raw) => {
     const row = rawRowSchema.parse(raw);
-    return { costCentre: row.costCentre, fte: row.fte, total: row.total };
+    return { positionNumber: row.positionNumber, costCentre: row.costCentre, name: row.name, total: row.total };
   });
 }
