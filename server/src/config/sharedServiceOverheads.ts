@@ -9,6 +9,9 @@ export const HR_OVERHEAD: Record<string, number> = {
   Operations: 85513.44163460186,
   'Server Hosting GDC': 10060.404898188453,
   'Server Hosting BDC': 0,
+  'Oracle Database Hosting': 10060.404898188453,
+  'SQL Database Hosting': 15090.60734728268,
+  'Domino / Lotus Notes': 10060.404898188453,
 };
 
 // "Business Support" sheet row 81 (GL 379111, GOODS & SERVICES COST ALLOC,
@@ -21,6 +24,9 @@ export const BUSINESS_SUPPORT_OVERHEAD: Record<string, number> = {
   Operations: 313931.86000000004,
   'Server Hosting GDC': 36933.16,
   'Server Hosting BDC': 0,
+  'Oracle Database Hosting': 36933.16,
+  'SQL Database Hosting': 55399.74,
+  'Domino / Lotus Notes': 36933.16,
 };
 
 // "Corporate" sheet rows 22 + 73 summed per destination (two "Total Shared
@@ -36,4 +42,7 @@ export const CORPORATE_STAFF_OVERHEAD: Record<string, number> = {
   Operations: 0,
   'Server Hosting GDC': 0,
   'Server Hosting BDC': 0,
+  'Oracle Database Hosting': 8658.680843918195,
+  'SQL Database Hosting': 12988.021265877293,
+  'Domino / Lotus Notes': 8658.680843918195,
 };
