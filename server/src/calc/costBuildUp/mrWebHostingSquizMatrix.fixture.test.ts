@@ -6,6 +6,7 @@ import {
   CONTRACTOR_ALLOCATIONS,
   CORPORATE_STAFF_OVERHEAD,
   EMPLOYEE_ALLOCATIONS,
+  FITOUT_OVERHEAD,
   HR_OVERHEAD,
   MAINTENANCE_AND_LICENSES,
   PLANNED_ASSET_ADDITIONS,
@@ -20,6 +21,7 @@ import { computePayrollStaffCosts } from './payrollStaffCosts.js';
 import {
   computeBusinessSupportOverhead,
   computeCorporateStaffOverhead,
+  computeFitoutOverhead,
   computeHrOverhead,
   computeMaintenanceAndLicenses,
 } from './sharedServiceOverheads.js';
@@ -54,6 +56,7 @@ describe('MR Web Hosting - Squiz Matrix Phase 4 fixture checkpoint', () => {
       'Business Support Overhead': computeBusinessSupportOverhead(BUSINESS_SUPPORT_OVERHEAD, PRODUCT),
       'Corporate Staff Overhead': computeCorporateStaffOverhead(CORPORATE_STAFF_OVERHEAD, PRODUCT),
       'Maintenance and Licenses': computeMaintenanceAndLicenses(MAINTENANCE_AND_LICENSES, PRODUCT),
+      'Fitout Overhead': computeFitoutOverhead(FITOUT_OVERHEAD, PRODUCT),
     };
 
     const results = compareToFixture(computedByRow, fixture, '2026-27');

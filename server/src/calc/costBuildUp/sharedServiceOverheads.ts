@@ -18,3 +18,9 @@ export function computeCorporateStaffOverhead(map: Record<string, number>, produ
 export function computeMaintenanceAndLicenses(map: Record<string, number>, product: string): number {
   return map[product] ?? 0;
 }
+
+// "Fitout Overhead" is the same kind of static per-destination dollar table -
+// see server/src/config/fitoutOverhead.ts.
+export function computeFitoutOverhead(map: Record<string, number>, product: string): number {
+  return map[product] ?? 0;
+}

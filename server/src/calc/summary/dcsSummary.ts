@@ -7,6 +7,7 @@ import {
   CONTRACTOR_ALLOCATIONS,
   CORPORATE_STAFF_OVERHEAD,
   EMPLOYEE_ALLOCATIONS,
+  FITOUT_OVERHEAD,
   GDC_BUILDING_OVERHEAD,
   HR_OVERHEAD,
   MAINTENANCE_AND_LICENSES,
@@ -19,6 +20,7 @@ import { computePayrollStaffCosts } from '../costBuildUp/payrollStaffCosts.js';
 import {
   computeBusinessSupportOverhead,
   computeCorporateStaffOverhead,
+  computeFitoutOverhead,
   computeHrOverhead,
   computeMaintenanceAndLicenses,
 } from '../costBuildUp/sharedServiceOverheads.js';
@@ -61,6 +63,7 @@ export function computeProductCostSummary(
     'Corporate Staff Overhead': computeCorporateStaffOverhead(CORPORATE_STAFF_OVERHEAD, product),
     'Business Support Overhead': computeBusinessSupportOverhead(BUSINESS_SUPPORT_OVERHEAD, product),
     'Maintenance and Licenses': computeMaintenanceAndLicenses(MAINTENANCE_AND_LICENSES, product),
+    'Fitout Overhead': computeFitoutOverhead(FITOUT_OVERHEAD, product),
   };
 
   if (buildingOverhead === 'GDC') {

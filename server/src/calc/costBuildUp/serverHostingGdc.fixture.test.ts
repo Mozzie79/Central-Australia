@@ -7,6 +7,7 @@ import {
   CORPORATE_STAFF_OVERHEAD,
   EMPLOYEE_ALLOCATIONS,
   GDC_BUILDING_OVERHEAD,
+  FITOUT_OVERHEAD,
   HR_OVERHEAD,
   MAINTENANCE_AND_LICENSES,
   PLANNED_ASSET_ADDITIONS,
@@ -22,6 +23,7 @@ import { computePayrollStaffCosts } from './payrollStaffCosts.js';
 import {
   computeBusinessSupportOverhead,
   computeCorporateStaffOverhead,
+  computeFitoutOverhead,
   computeHrOverhead,
   computeMaintenanceAndLicenses,
 } from './sharedServiceOverheads.js';
@@ -59,6 +61,7 @@ describe('Server Hosting GDC Phase 4 fixture checkpoint', () => {
       'Business Support Overhead': computeBusinessSupportOverhead(BUSINESS_SUPPORT_OVERHEAD, PRODUCT),
       'Corporate Staff Overhead': computeCorporateStaffOverhead(CORPORATE_STAFF_OVERHEAD, PRODUCT),
       'Maintenance and Licenses': computeMaintenanceAndLicenses(MAINTENANCE_AND_LICENSES, PRODUCT),
+      'Fitout Overhead': computeFitoutOverhead(FITOUT_OVERHEAD, PRODUCT),
       'GDC Building Overheads': computeGdcBuildingOverheads(GDC_BUILDING_OVERHEAD, PRODUCT),
     };
 
