@@ -22,3 +22,14 @@ export type ContractorActualRow = {
   hours: number;
   dollar: number;
 };
+
+export type MainframeUsageRow = {
+  agency: string;
+  date: string;
+  rType: string;
+  typeTask: string;
+  resource: string;
+  application: string;
+  tranName: string;
+  cpuSecs: number;
+};

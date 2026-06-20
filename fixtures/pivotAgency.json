@@ -1,0 +1,168 @@
+{
+  "sheetName": "Pivot Agency 25-26",
+  "source": "DCS_Input_costs_202627_V1.6.xlsb, sheet Pivot Agency 25-26, stored pivot table values (Sum of CPU Secs grouped by Agency, Mar 2025-Feb 2026, Grand Total column) - confirmed by direct summation that this is a literal SUM(CPU Secs) GROUP BY Agency over the data sheet, no hidden formula complexity",
+  "rows": {
+    "AAPA IT MANAGEMENT": {
+      "Total": 5.359999999999999
+    },
+    "AGD COMMUNITY SERVICES": {
+      "Total": 822.15
+    },
+    "AGD CORPORATE SERVICES": {
+      "Total": 801.0999999999999
+    },
+    "AGD CORRECTIONAL SERVICES": {
+      "Total": 693215.9
+    },
+    "AGD COURT SERVICES": {
+      "Total": 1732509.6399999997
+    },
+    "AGD FINES RECOVERY UNIT": {
+      "Total": 75950.04
+    },
+    "AGD LEGAL SERVICES": {
+      "Total": 47288.19000000001
+    },
+    "AGD LICENSING AND COMPLIANCE SYSTEM": {
+      "Total": 40154.63
+    },
+    "AGD OFFICE OF CRIME PREVENTION": {
+      "Total": 73735.17000000001
+    },
+    "AGO IT MANAGEMENT": {
+      "Total": 0.66
+    },
+    "BATCHELOR INSTITUTE OF INDIGENOUS TERTIARY EDUCATION": {
+      "Total": 115986.93
+    },
+    "CHIEF MINISTER": {
+      "Total": 55125.909999999996
+    },
+    "DCDD - DIGITAL SOLUTIONS": {
+      "Total": 31035.31
+    },
+    "DCDD - DPIR ITM": {
+      "Total": 37762.75
+    },
+    "DCDD AGS - ASNEX": {
+      "Total": 2617977.0300000003
+    },
+    "DCDD AGS - GAS SUPPORT": {
+      "Total": 7203070.1
+    },
+    "DCDD AGS - PROCUREMENT SYSTEMS": {
+      "Total": 71305.40000000001
+    },
+    "DCDD APPLICATION DEVELOPMENT": {
+      "Total": 1329.98
+    },
+    "DCDD CIS IT SERVICES MANAGEMENT": {
+      "Total": 134268.10000000003
+    },
+    "DCDD DCD HUMAN RESOURCES PAPMS": {
+      "Total": 2469990.2099999995
+    },
+    "DCDD DCD HUMAN RESOURCES PIPS AND MYHR": {
+      "Total": 7951102.010000006
+    },
+    "DCDD DCS BUSINESS SUPPORT": {
+      "Total": 2917.29
+    },
+    "DCDD NT FLEET": {
+      "Total": 587137.3800000001
+    },
+    "DCDD WEB DESIGN AND SUPPORT": {
+      "Total": 52221.229999999996
+    },
+    "DEPARTMENT OF AGRICULTURE AND FISHERIES": {
+      "Total": 421.7600000000001
+    },
+    "DEPARTMENT OF HOUSING  LOCAL GOVERNMENT AND COMMUNITY DEVELOPMENT": {
+      "Total": 370353.1399999998
+    },
+    "DEPARTMENT OF LANDS PLANNING AND THE ENVIRONMENT": {
+      "Total": 1074.82
+    },
+    "DEPARTMENT OF TOURISM & HOSPITALITY": {
+      "Total": 179.20999999999998
+    },
+    "DEPARTMENT OF TREASURY AND FINANCE": {
+      "Total": 233.35999999999996
+    },
+    "DEPT OF LEGISLATIVE ASSEMBLY": {
+      "Total": 63.290000000000006
+    },
+    "DEPT OF PEOPLE  SPORT & CULTUR": {
+      "Total": 76.69000000000001
+    },
+    "DET - CORPORATE COMMUNICATION": {
+      "Total": 934.7699999999999
+    },
+    "DHLGCD IT MANAGEMENT": {
+      "Total": 621933.8899999998
+    },
+    "DIPL INFRASTRUCTURE SERVICES": {
+      "Total": 297584.44999999984
+    },
+    "DIPL TRANSPORT": {
+      "Total": 3471994.229999999
+    },
+    "DITT INDUSTRY TOURISM AND TRADE": {
+      "Total": 31902.36
+    },
+    "DLI - LOGISTICS AND INFRASTRUCTURE": {
+      "Total": 81996.31999999999
+    },
+    "DOH IT MANAGEMENT": {
+      "Total": 224450.47999999995
+    },
+    "DOT LANDS IT MGT": {
+      "Total": 433.15
+    },
+    "DPIR IT MANAGEMENT": {
+      "Total": 36.230000000000004
+    },
+    "DTF APEX": {
+      "Total": 62671.71000000001
+    },
+    "DTF TRM": {
+      "Total": 210771.31
+    },
+    "DTSC DARWIN WATERFRONT CORPORATION": {
+      "Total": 43739.28000000001
+    },
+    "INDEPENDENT COMMISSIONER AGAINST CORRUPTION": {
+      "Total": 32.989999999999995
+    },
+    "JACANA ENERGY TRIM": {
+      "Total": 332893.69
+    },
+    "LDC IT MANAGEMENT": {
+      "Total": 1.27
+    },
+    "NORTHERN TERRITORY POLICE": {
+      "Total": 4065116.3499999996
+    },
+    "NT FIRE AND EMERGENCY SERVICES": {
+      "Total": 267.27
+    },
+    "NTEC IT MANAGEMENT": {
+      "Total": 0.02
+    },
+    "NTTC IT MANAGEMENT": {
+      "Total": 47318.75
+    },
+    "OBM IT MANAGEMENT": {
+      "Total": 73.94999999999999
+    },
+    "TF TERRITORY FAMILIES": {
+      "Total": 652836.77
+    },
+    "TWP TERRITORY WILDLIFE PARK IT MGT": {
+      "Total": 0.03
+    },
+    "Grand Total": {
+      "Total": 34515104.01000002
+    }
+  }
+}
