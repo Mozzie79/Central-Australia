@@ -1,0 +1,12 @@
+{
+  "sheetName": "ES Storage - SAN Storage",
+  "source": "DCS_Input_costs_202627_V1.6.xlsb, sheet ES Storage, SAN Storage block (header DCS51), stored values",
+  "rows": {
+    "Assets": { "2026-27": 1034875.3142777778 },
+    "Payroll Staff Costs": { "2026-27": 917848.0 },
+    "Contractor Staff Costs": { "2026-27": 0 },
+    "HR": { "2026-27": 35211.417143659586 },
+    "Business Support Overhead": { "2026-27": 129266.06000000001 },
+    "Corporate Staff Overhead": { "2026-27": 30305.382953713688 }
+  }
+}

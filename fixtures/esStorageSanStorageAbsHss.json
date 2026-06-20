@@ -1,0 +1,12 @@
+{
+  "sheetName": "ES Storage - SAN Storage ABS-HSS",
+  "source": "DCS_Input_costs_202627_V1.6.xlsb, sheet ES Storage, SAN Storage ABS-HSS block (header DCS51), stored values",
+  "rows": {
+    "Assets": { "2026-27": 108357.91999999997 },
+    "Payroll Staff Costs": { "2026-27": 38166.0 },
+    "Contractor Staff Costs": { "2026-27": 0 },
+    "HR": { "2026-27": 0 },
+    "Business Support Overhead": { "2026-27": 0 },
+    "Corporate Staff Overhead": { "2026-27": 0 }
+  }
+}
