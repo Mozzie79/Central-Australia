@@ -11,3 +11,4 @@ export * from './employeeProductMap.js';
 export * from './sharedServiceOverheads.js';
 export * from './buildingOverheads.js';
 export * from './mfFixedChargeExclusions.js';
+export * from './db2DatabaseCount.js';

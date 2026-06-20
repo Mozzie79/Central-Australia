@@ -1,0 +1,187 @@
+{
+  "sheetName": "MF Fixed 26-27 - DB2/QMF Charge",
+  "source": "DCS_Input_costs_202627_V1.6.xlsb, sheet MF Fixed 26-27, column '2026-27 DB2/QMF Charge' (col 33), per-agency-name stored values, summed across duplicate name rows (NTTC IT MANAGEMENT appears twice, both 0). Formula confirmed: ROUND(agency DB2 database count [col 27, '2025-26 Budget No. of DB2 Databases' - a static budget figure with no upstream raw-data sheet anywhere in the workbook] / total DB2 database count [81] * DB2/QMF Cost + % Profit Margin pool (1062584.1368387293), 0).",
+  "pool": 1062584.1368387293,
+  "rows": {
+    "AAPA IT MANAGEMENT": {
+      "Total": 0.0
+    },
+    "AGD COMMUNITY SERVICES": {
+      "Total": 0.0
+    },
+    "AGD CORPORATE SERVICES": {
+      "Total": 0.0
+    },
+    "AGD CORRECTIONAL SERVICES": {
+      "Total": 0.0
+    },
+    "AGD COURT SERVICES": {
+      "Total": 118065.0
+    },
+    "AGD COURT SUPPORT SERVICES": {
+      "Total": 0.0
+    },
+    "AGD FINES RECOVERY UNIT": {
+      "Total": 0.0
+    },
+    "AGD LEGAL SERVICES": {
+      "Total": 0.0
+    },
+    "AGD LICENSING AND COMPLIANCE SYSTEM": {
+      "Total": 0.0
+    },
+    "AGD OFFICE OF CRIME PREVENTION": {
+      "Total": 0.0
+    },
+    "AGO IT MANAGEMENT": {
+      "Total": 0.0
+    },
+    "BATCHELOR INSTITUTE OF INDIGENOUS TERTIARY EDUCATION": {
+      "Total": 0.0
+    },
+    "CHIEF MINISTER": {
+      "Total": 0.0
+    },
+    "DCDD - DIGITAL SOLUTIONS": {
+      "Total": 0.0
+    },
+    "DCDD - DPIR ITM": {
+      "Total": 0.0
+    },
+    "DCDD AGS - ASNEX": {
+      "Total": 170538.0
+    },
+    "DCDD AGS - GAS SUPPORT": {
+      "Total": 0.0
+    },
+    "DCDD AGS - PROCUREMENT SYSTEMS": {
+      "Total": 0.0
+    },
+    "DCDD APPLICATION DEVELOPMENT": {
+      "Total": 0.0
+    },
+    "DCDD CIS IT SERVICES MANAGEMENT": {
+      "Total": 0.0
+    },
+    "DCDD CMSA MDM": {
+      "Total": 0.0
+    },
+    "DCDD DCD BUDGETS & COMMERCIAL": {
+      "Total": 0.0
+    },
+    "DCDD DCD HUMAN RESOURCES PAPMS": {
+      "Total": 223011.0
+    },
+    "DCDD DCD HUMAN RESOURCES PIPS AND MYHR": {
+      "Total": 0.0
+    },
+    "DCDD DCS BUSINESS SUPPORT": {
+      "Total": 0.0
+    },
+    "DCDD DCS MIDRANGE SERVICES": {
+      "Total": 0.0
+    },
+    "DCDD NT FLEET": {
+      "Total": 52473.0
+    },
+    "DCDD WEB DESIGN AND SUPPORT": {
+      "Total": 0.0
+    },
+    "DENR IT MANAGEMENT": {
+      "Total": 0.0
+    },
+    "DEPARTMENT OF AGRICULTURE AND FISHERIES": {
+      "Total": 0.0
+    },
+    "DEPARTMENT OF HOUSING  LOCAL GOVERNMENT AND COMMUNITY DEVELOPMENT": {
+      "Total": 104947.0
+    },
+    "DEPARTMENT OF LANDS PLANNING AND THE ENVIRONMENT": {
+      "Total": 0.0
+    },
+    "DEPARTMENT OF TOURISM & HOSPITALITY": {
+      "Total": 0.0
+    },
+    "DEPARTMENT OF TREASURY AND FINANCE": {
+      "Total": 0.0
+    },
+    "DEPT OF LEGISLATIVE ASSEMBLY": {
+      "Total": 0.0
+    },
+    "DEPT OF PEOPLE  SPORT & CULTUR": {
+      "Total": 0.0
+    },
+    "DET - CORPORATE COMMUNICATION": {
+      "Total": 0.0
+    },
+    "DHLGCD IT MANAGEMENT": {
+      "Total": 0.0
+    },
+    "DIPL INFRASTRUCTURE SERVICES": {
+      "Total": 0.0
+    },
+    "DIPL TRANSPORT": {
+      "Total": 236130.0
+    },
+    "DITT INDUSTRY TOURISM AND TRADE": {
+      "Total": 0.0
+    },
+    "DLI - LOGISTICS AND INFRASTRUCTURE": {
+      "Total": 0.0
+    },
+    "DOH IT MANAGEMENT": {
+      "Total": 52473.0
+    },
+    "DOT LANDS IT MGT": {
+      "Total": 0.0
+    },
+    "DPIR IT MANAGEMENT": {
+      "Total": 0.0
+    },
+    "DTF APEX": {
+      "Total": 39355.0
+    },
+    "DTF TRM": {
+      "Total": 0.0
+    },
+    "DTSC DARWIN WATERFRONT CORPORATION": {
+      "Total": 0.0
+    },
+    "INDEPENDENT COMMISSIONER AGAINST CORRUPTION": {
+      "Total": 0.0
+    },
+    "JACANA ENERGY TRIM": {
+      "Total": 0.0
+    },
+    "LDC IT MANAGEMENT": {
+      "Total": 0.0
+    },
+    "MAGNT DEPT OF ARTS AND MUSEUMS": {
+      "Total": 0.0
+    },
+    "NORTHERN TERRITORY POLICE": {
+      "Total": 65592.0
+    },
+    "NT FIRE AND EMERGENCY SERVICES": {
+      "Total": 0.0
+    },
+    "NTEC IT MANAGEMENT": {
+      "Total": 0.0
+    },
+    "NTTC DCDD IT APPLICATION": {
+      "Total": 0.0
+    },
+    "NTTC IT MANAGEMENT": {
+      "Total": 0.0
+    },
+    "OBM IT MANAGEMENT": {
+      "Total": 0.0
+    },
+    "TF TERRITORY FAMILIES": {
+      "Total": 0.0
+    },
+    "TWP TERRITORY WILDLIFE PARK IT MGT": {
+      "Total": 0.0
+    }
+  }
+}
