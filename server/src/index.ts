@@ -6,6 +6,7 @@ import { buildPriceBook, computeRevenueFromPriceBook } from './calc/pricing/pric
 import { computeProductCostSummary } from './calc/summary/dcsSummary.js';
 import { computeFamilyRollup, getAllProductConfigs } from './calc/summary/familyRollup.js';
 import { computePivotAgency } from './calc/usageAllocation/pivotAgency.js';
+import { runAllValidations } from './validation/runAllValidations.js';
 import { parseContractorActualCsv } from './parsers/contractorActual.js';
 import { parseEmployeeExpenseCsv } from './parsers/employeeExpense.js';
 import { parseFixedAssetsCsv } from './parsers/fixedAssets.js';
@@ -128,6 +129,10 @@ app.get('/api/summary', (_req, res) => {
   const families = computeFamilyRollup(fixedAssets!, employeeExpense!, contractorActuals!, 'fy202627');
 
   res.json({ products, families });
+});
+
+app.get('/api/validation', (_req, res) => {
+  res.json({ sheets: runAllValidations() });
 });
 
 const PORT = process.env.PORT ? Number(process.env.PORT) : 4000;

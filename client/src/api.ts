@@ -1,4 +1,4 @@
-import type { PriceBookLineItem } from '@dcs/shared';
+import type { PriceBookLineItem, ValidationResponse } from '@dcs/shared';
 
 export type UploadFileType = 'fixed-assets' | 'employee-expense' | 'contractor-actual' | 'mainframe-usage';
 
@@ -58,5 +58,10 @@ export async function updatePriceBookRate(id: string, rate: number): Promise<Pri
 
 export async function getSummary(): Promise<SummaryResponse> {
   const res = await fetch('/api/summary');
+  return asJson(res);
+}
+
+export async function getValidation(): Promise<ValidationResponse> {
+  const res = await fetch('/api/validation');
   return asJson(res);
 }

@@ -1,6 +1,6 @@
+import type { RowResult } from '@dcs/shared';
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
-import { expect } from 'vitest';
 
 export const FIXTURES_DIR = path.resolve(import.meta.dirname, '../../../../fixtures');
 
@@ -10,13 +10,7 @@ export type FixtureFile = {
   rows: Record<string, Record<string, number>>;
 };
 
-export type RowResult = {
-  row: string;
-  computed: number;
-  expected: number;
-  diffPct: number;
-  status: 'matched' | 'approximate' | 'flagged';
-};
+export type { RowResult };
 
 // Tolerance is "within 1% or $5, whichever is larger" (per the plan's proposed threshold).
 // For an expected value of exactly 0, percentage diff is undefined, so fall back to the
@@ -51,20 +45,3 @@ export function compareToFixture(
   });
 }
 
-export function reportAndAssertResults(sheetName: string, results: RowResult[]): void {
-  console.table(
-    results.map((r) => ({
-      row: r.row,
-      computed: r.computed.toFixed(2),
-      expected: r.expected.toFixed(2),
-      diffPct: Number.isFinite(r.diffPct) ? (r.diffPct * 100).toFixed(2) + '%' : 'n/a',
-      status: r.status,
-    })),
-  );
-
-  for (const r of results) {
-    expect(r.status, `${sheetName} ${r.row} (computed ${r.computed.toFixed(2)} vs expected ${r.expected.toFixed(2)}) is flagged`).not.toBe(
-      'flagged',
-    );
-  }
-}

@@ -3,10 +3,11 @@ import { useState } from 'react';
 import { PriceBookEditor } from './PriceBookEditor';
 import { SummaryTable } from './SummaryTable';
 import { UploadPanel } from './UploadPanel';
+import { ValidationPage } from './ValidationPage';
 
 const queryClient = new QueryClient();
 
-const TABS = ['Upload', 'Price Book', 'Summary'] as const;
+const TABS = ['Upload', 'Price Book', 'Summary', 'Validation'] as const;
 type Tab = (typeof TABS)[number];
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         {tab === 'Upload' && <UploadPanel />}
         {tab === 'Price Book' && <PriceBookEditor />}
         {tab === 'Summary' && <SummaryTable />}
+        {tab === 'Validation' && <ValidationPage />}
       </main>
     </QueryClientProvider>
   );
