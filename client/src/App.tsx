@@ -1,20 +1,33 @@
-import { useEffect, useState } from 'react';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { useState } from 'react';
+import { PriceBookEditor } from './PriceBookEditor';
+import { SummaryTable } from './SummaryTable';
+import { UploadPanel } from './UploadPanel';
+
+const queryClient = new QueryClient();
+
+const TABS = ['Upload', 'Price Book', 'Summary'] as const;
+type Tab = (typeof TABS)[number];
 
 function App() {
-  const [health, setHealth] = useState<string>('checking...');
-
-  useEffect(() => {
-    fetch('/api/health')
-      .then((res) => res.json())
-      .then((data) => setHealth(data.status))
-      .catch(() => setHealth('unreachable'));
-  }, []);
+  const [tab, setTab] = useState<Tab>('Upload');
 
   return (
-    <main style={{ fontFamily: 'sans-serif', padding: '2rem' }}>
-      <h1>DCS Input Costs Model</h1>
-      <p>Server health: {health}</p>
-    </main>
+    <QueryClientProvider client={queryClient}>
+      <main style={{ fontFamily: 'sans-serif', padding: '2rem' }}>
+        <h1>DCS Input Costs Model</h1>
+        <nav style={{ marginBottom: '1.5rem' }}>
+          {TABS.map((t) => (
+            <button key={t} onClick={() => setTab(t)} disabled={tab === t} style={{ marginRight: '0.5rem' }}>
+              {t}
+            </button>
+          ))}
+        </nav>
+        {tab === 'Upload' && <UploadPanel />}
+        {tab === 'Price Book' && <PriceBookEditor />}
+        {tab === 'Summary' && <SummaryTable />}
+      </main>
+    </QueryClientProvider>
   );
 }
 

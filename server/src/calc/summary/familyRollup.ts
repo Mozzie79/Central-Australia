@@ -68,6 +68,12 @@ function sumProductSummaries(
   return total;
 }
 
+// All ~26 tracked products across every family, flattened - used by the
+// /api/summary route to compute each product's own cost build-up row.
+export function getAllProductConfigs(): ProductCostConfig[] {
+  return Object.values(FAMILY_MEMBERSHIP).flat();
+}
+
 export function computeFamilyRollup(
   fixedAssets: FixedAssetRow[],
   employeeExpense: EmployeeExpenseRow[],

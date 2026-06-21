@@ -1,18 +1,17 @@
-export enum CostCategory {
-  Assets = 'Assets',
-  Licenses = 'Licenses',
-  MaintenanceAndLicenses = 'MaintenanceAndLicenses',
-  HR = 'HR',
-  PayrollStaffCosts = 'PayrollStaffCosts',
-  ContractorStaffCosts = 'ContractorStaffCosts',
-  BusinessSupportOverhead = 'BusinessSupportOverhead',
-  CorporateStaffOverhead = 'CorporateStaffOverhead',
-  SharedCostOverhead = 'SharedCostOverhead',
-  Plaza3SharedCosts = 'Plaza3SharedCosts',
-  CostCentreSpecific = 'CostCentreSpecific',
-  Internal = 'Internal',
-  TotalExpense = 'TotalExpense',
-}
+export type CostCategory =
+  | 'Assets'
+  | 'Licenses'
+  | 'MaintenanceAndLicenses'
+  | 'HR'
+  | 'PayrollStaffCosts'
+  | 'ContractorStaffCosts'
+  | 'BusinessSupportOverhead'
+  | 'CorporateStaffOverhead'
+  | 'SharedCostOverhead'
+  | 'Plaza3SharedCosts'
+  | 'CostCentreSpecific'
+  | 'Internal'
+  | 'TotalExpense';
 
 export type FiscalYear = string; // e.g. "2026-27"
 
