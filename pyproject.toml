@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "btc-bot"
+version = "0.1.0"
+description = "BTC strategy backtester for Bybit BTCUSDT perpetual"
+requires-python = ">=3.11"
+dependencies = [
+    "pybit>=5.16.0",
+    "pandas>=2.0",
+    "numpy>=1.26",
+    "backtesting>=0.6.5",
+    "ta>=0.11.0",
+    "pydantic>=2.0",
+    "pydantic-settings>=2.0",
+    "python-dotenv>=1.0",
+    "typer>=0.12",
+    "sqlalchemy>=2.0",
+    "pyarrow>=15.0",
+    "tenacity>=8.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "freezegun>=1.4",
+]
+
+[project.scripts]
+btc-bot = "btc_bot.cli.main:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
